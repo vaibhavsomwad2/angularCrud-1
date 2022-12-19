@@ -1,0 +1,18 @@
+{
+  "posts": [
+    {
+      "title": "vaibhav",
+      "body": "somwad or Reddy",
+      "id": 1
+    },
+    {
+      "title": "somwad",
+      "body": "BALAJI",
+      "id": 2
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

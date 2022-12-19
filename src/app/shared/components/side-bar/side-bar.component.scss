@@ -1,0 +1,35 @@
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.mat-icon {
+  -webkit-user-select: none;
+  user-select: none;
+  background-repeat: no-repeat;
+  display: inline-block;
+  fill: currentColor;
+  height: 24px;
+  width: 24px;
+  overflow: hidden;
+  font-size: 27px;
+  color: tomato;
+}
+.mat-mdc-list-item .mdc-list-item__primary-text {
+  font: 400 16px/24px Roboto, sans-serif;
+  letter-spacing: .03125em;
+  font-size: 24px;
+}

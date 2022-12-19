@@ -1,0 +1,33 @@
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let post of allpost" >
+                <mat-card class="example-card  p-2 mb-3 bg-success text-white">
+                    <mat-card-header>
+                        <h2>{{post.title}}</h2>
+                    </mat-card-header>
+                    <mat-divider class="mb-3"></mat-divider>
+                    <mat-card-content class="mb-3">
+                        {{post.body}}
+                    </mat-card-content>
+                    <mat-card-footer class="text-right">
+                        <button mat-raised-button color="primary"  [routerLink]="['/update',post.id]" class="mr-3" aria-label="Example icon button with a delete icon">
+                           Edit <mat-icon>edit_square</mat-icon>
+                        </button>
+                        <button mat-raised-button color="warn" (click)="onDelete(post.id)" aria-label="Example icon button with a delete icon">
+                           Delete <mat-icon>delete</mat-icon>
+                        </button>
+                    </mat-card-footer>
+                  </mat-card>
+        </div>
+        <ng-container *ngIf="errMsg">
+            <p class="alert alert-danger">
+                {{errMsg}}
+            </p>
+        </ng-container>
+        <ng-container *ngIf="allpost.length === 0 && !errMsg">
+            <p class="alert alert-info">
+                There is no post Availble Yet !!!!
+            </p>
+        </ng-container>
+    </div>
+</div>

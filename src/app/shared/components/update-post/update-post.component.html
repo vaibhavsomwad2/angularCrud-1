@@ -1,0 +1,23 @@
+<div class="container py-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <form class="example-form mb-3" [formGroup]="postForm">
+                <mat-form-field class="example-full-width">
+                  <mat-label>Title</mat-label>
+                  <input matInput formControlName="title" placeholder="Ex.Enter your title"  >
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                  <mat-label>Post</mat-label>
+                  <textarea matInput formControlName="body" placeholder="Ex. Enter your title Details..." ></textarea>
+                </mat-form-field>
+                <div class="example-button-row">
+                    <button mat-fab extended color="primary"   type="button"  [disabled]="postForm.invalid" (click)="updatePost()">
+                      <mat-icon>favorite</mat-icon>
+                      Update Post
+                    </button>
+    
+                 </div>
+            </form>
+        </div>
+    </div>
+</div>
